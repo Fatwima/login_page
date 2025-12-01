@@ -1,0 +1,293 @@
+<html>
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>abc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+
+            background-color: #f5f9ff;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 5px 25px rgba(19, 18, 18, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .login-section {
+            flex: 1;
+            padding: 40px;
+            padding-left: 80px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2d5be3;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #1a2b6d;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        h2 {
+            color: #333;
+            margin: 25px 0 15px;
+            font-size: 20px;
+        }
+
+
+        .role-options {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .role-option {
+             flex: 1;
+    padding: 5px;
+    border: 2px solid #e0e6ff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 300;
+    height: 100px;
+        }
+
+        .role-option:hover,
+        .role-option.active {
+            background-color: #2d5be3;
+            color: white;
+            border-color: #2d5be3;
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #444;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e6ff;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #2d5be3;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            align-items: center;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .forgot-password {
+            color: #2d5be3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .btn-signin {
+            width: 100%;
+            padding: 16px;
+            background-color: #2d5be3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .btn-signin:hover {
+            background-color: #1a49c7;
+        }
+
+        .signup-link {
+            text-align: center;
+            color: #666;
+        }
+
+        .signup-link a {
+            color: #2d5be3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .info-section {
+            flex: 1;
+            padding: 40px;
+            background: linear-gradient(135deg, #2d5be3 0%, #1a2b6d 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .info-section h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .info-section h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .info-section p {
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        .features {
+            list-style: none;
+        }
+
+        .features li {
+            padding: 10px 0;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li:before {
+
+            margin-right: 10px;
+            font-weight: bold;
+            color: #4cd964;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .role-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info-section">
+            <h1>EduTech</h1>
+            <h2>Learning Platform</h2>
+
+            <h2>Learning Management System</h2>
+            <p>Empowering education through innovative technology and collaborative learning experiences.</p>
+
+            <ul class="features">
+                <li> <span style='font-size:15px;'>&#9989;</span>Interactive Learning Modules</li>
+                <li><span style='font-size:15px;'>&#9989;</span>Real-time Progress Tracking</li>
+                <li><span style='font-size:15px;'>&#9989;</span>Collaborative Environment</li>
+            </ul>
+        </div>
+        <div class="login-section">
+
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Select your role and sign in to continue</p>
+
+            <h2>Select Role</h2>
+
+            <div class="role-options">
+                <div class="role-option active">
+                    <i class="fas fa-home">admin</i>
+                </div>
+                <div class="role-option"><i class="glyphicon glyphicon-cloud"  ;>Student</i></div>
+                <div class="role-option"><i class="glyphicon glyphicon-cloud"  ;>Employee</i>
+                </div>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="options">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn-signin">Sign In</button>
+            </form>
+
+            <p class="signup-link">
+                Don't have an account? <a href="#">Sign up</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
