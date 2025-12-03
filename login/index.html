@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech | Learning Management System</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles.css">
+   
+</head>
+<body>
+    <div class="main-container">
+    
+        <div class="info-container">
+            <div class="info-overlay">
+                <div class="platform-header">
+                    <h1 class="platform-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        EduTech<br></h1>
+                        <h2 class="platform-subtitle">Learning Platform</h2>
+                    
+                    
+                </div>
+
+                <div class="platform-description">
+                    <div class="description-header">
+                     
+                        <h3>Learning</h3><p><h3>Management System</h3></p>
+                         
+                    </div>
+                    <p class="description-text">
+                    Empowering education through innovative technology and collaborative learning experiences.
+                    </p>
+                </div>
+
+                <div class="features-container">
+                   
+                    
+                    
+                        
+            <ol class="features" style="list-style-type: none;">
+                <li> <span style='font-size:15px;'>&#9989;</span> &nbsp;&nbsp;  Interactive Learning Modules</li>
+                <li><span style='font-size:15px;'>&#9989;</span>  &nbsp;&nbsp;  Real-time Progress Tracking</li>
+                <li><span style='font-size:15px;'>&#9989;</span>   &nbsp;&nbsp; Collaborative Environment</li>
+            </ol>
+                            
+                            
+                           
+                    
+                </div>
+
+               
+            </div>
+        </div>
+       
+        <div class="login-container">
+            <div class="login-header">
+                
+                <h2 class="welcome-title">Welcome Back</h2>
+                <p class="welcome-subtitle">Select your role and sign in to continue</p>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h3 class="section-title">Select Role</h3>
+                    </div>
+                            <div class="role-selection" style="display: flex; justify-content: center; gap: 20px;">
+    <div class="role-option active" data-role="admin" style="
+        text-align: center;
+        cursor: pointer;
+        padding: 15px;
+        background: #e8f4fc;
+        border-radius: 8px;
+        border: 2px solid #3498db;
+        min-width: 100px;
+    ">
+                         <div class="role-icon" style="font-size: 2em; color: #3498db;">
+                                  <i class="fas fa-user-shield"></i>
+                          </div>
+                          <div class="role-info">
+                           <h4 style="margin: 10px 0 0 0; color: #2c3e50;">Admin</h4>
+                                 </div>
+                         </div>
+    
+                           <div class="role-option" data-role="student" style="
+                            text-align: center;
+                             cursor: pointer;
+                              padding: 15px;
+                               background: #f8f9fa;
+                                border-radius: 8px;
+                                border: 2px solid #e0e0e0;
+                                   min-width: 100px;
+                                  ">
+                                 <div class="role-icon" style="font-size: 2em; color: #7f8c8d;">
+                                   <i class="fas fa-user-graduate"></i>
+                                   </div>
+                               <div class="role-info">
+                                      <h4 style="margin: 10px 0 0 0; color: #2c3e50;">Student</h4>
+                                   </div>
+                                   </div>
+    
+                                <div class="role-option" data-role="employee" style="
+        text-align: center;
+        cursor: pointer;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border: 2px solid #e0e0e0;
+        min-width: 100px;
+    ">
+        <div class="role-icon" style="font-size: 2em; color: #7f8c8d;">
+            <i class="fas fa-user-tie"></i>
+        </div>
+        <div class="role-info">
+            <h4 style="margin: 10px 0 0 0; color: #2c3e50;">Employee</h4>
+        </div>
+    </div>
+</div>
+                  
+                </div>
+
+             
+                <form id="loginForm" class="login-form" novalidate>
+                   
+                    <div class="section-container">
+                        <div class="section-header">
+                            <i class="fas fa-envelope section-icon"></i>
+                            <h3 class="section-title">Email Address</h3>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class="fas fa-at"></i>
+                            </div>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email "
+                                autocomplete="email"
+                                required
+                            >
+                            <div class="input-validation">
+                                <i class="fas fa-exclamation-circle validation-icon hidden"></i>
+                            </div>
+                        </div>
+                        <div class="error-message" id="emailError"></div>
+                   
+
+                        <div class="section-header">
+                            <i class="fas fa-lock section-icon"></i>
+                            <h3 class="section-title">Password</h3>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                                minlength="6"
+                            >
+                           
+                            <div class="input-validation">
+                                <i class="fas fa-exclamation-circle validation-icon hidden"></i>
+                            </div>
+                        </div>
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+                    <div class="options-container">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">
+                                <i class="fas fa-check-square"></i>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        
+                        <a href="#" class="forgot-password">
+                            
+                            Forgot password?
+                        </a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        
+                        Sign In
+                    </button>
+                    <div class="signup-link">
+                        <p>Don't have an account?   </p>
+                            <a href="#" id="signupLink">
+                                
+                                Sign up 
+                            </a>
+                      
+                    </div>
+                </form>
+                <div id="formStatus" class="form-status hidden"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
