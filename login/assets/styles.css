@@ -342,7 +342,7 @@ body {
 }
 
 .error-message.show {
-    opacity: 1;
+    opacity: 5;
     transform: translateY(0);
 }
 
